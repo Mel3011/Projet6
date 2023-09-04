@@ -1,0 +1,22 @@
+.banière {
+    padding: 0 50px;
+}
+
+.home-banner h1 {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.home-banner {
+    position: relative;
+    text-align: center;
+}
+.home-banner img{
+    border-radius: 30px;
+    height: 200px;
+    width: 100%;
+    object-fit:cover;
+}

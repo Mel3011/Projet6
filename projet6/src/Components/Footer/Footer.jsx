@@ -1,13 +1,14 @@
 import React from 'react';
+import logo from '../../Assets/Logoblanc.png';
 
 const Footer = () => {
     return (
         <footer>
-            <div className="logo">
-
+            <div className="logofooter">
+            <img src={logo} alt="Logo de mon application" />
             </div>
             <div className="credentials">
-            Ceci est mon footer
+            © 2020 Kasa. All rights reserved
             </div>
         </footer>
     );
