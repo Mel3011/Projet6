@@ -1,27 +1,17 @@
 import React from 'react';
+import annonces from '../../annonces.json';
 
-const Card = () => {
-    return (
-        <div className='block-card'>
-            <div className='location-card'>
-                <h2 className='location-title'>
-                Ceci est un test
-                </h2>
-            </div>
-            <div className='location-card'>
-                <h2 className='location-title'>
-                Ceci est un test
-                </h2>
-            </div>
-            <div className='location-card'>
-                <h2 className='location-title'>
-                Ceci est un test
-                </h2>
-            </div>
-            
+function Card() {
+  return (
+    <div className='block-card'>
+      {annonces.map((logement, index) => (
+        <div key={index} className="location-card">
+          <img src={logement.cover} alt={logement.title} />
+          <h2 className='location-title'>{logement.title}</h2>
         </div>
-        
-    );
-};
+      ))}
+    </div>
+  );
+}
 
 export default Card;

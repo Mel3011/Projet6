@@ -16,14 +16,25 @@
 }
 
 .location-card {
-    background: linear-gradient(0deg, rgba(0,0,0,1) 3%, rgba(255,255,255,0) 100%);
-    width: 32%;
-    height: 300px;
+    width: 100%;
+    max-width: 300px; 
     border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px; 
+    display: flex;
+    flex-direction: column;
 }
 
-.block-card h2{
-    position: absolute;
-    
-    width: 50%;
+.location-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 30px; 
+}
+
+.location-card h2{
+    margin: 10px; 
+    font-size: 18px;
+    font-weight: bold;
+    color: white; 
 }
