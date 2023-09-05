@@ -5,16 +5,30 @@ header {
     align-items: center;
     justify-content: space-between;
     color: #ff6464;
-    padding: 0 50px;
+    padding: 30px 50px;
 }
-nav {
+
+.nav-bar {
+    width: 500px;
+}
+
+ul{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 15px;
+}
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: #FF6060;
+    padding: 15px;
+    font-size: 24px;
     
 }
-li {
-    text-decoration: none;
-}
 .logo img {
-    width: 50%;
+    width: 80%;
 }

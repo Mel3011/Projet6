@@ -8,15 +8,35 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-size: 40px;
+    z-index: 2;
 
 }
 .home-banner {
     position: relative;
     text-align: center;
-}
-.home-banner img{
     border-radius: 30px;
-    height: 200px;
+    overflow: hidden;
+    height: 230px;
+}
+
+.home-banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Couleur noire avec une opacité de 0.5 (50%) */
+    z-index: 1; 
+}
+
+.home-banner img {
+    height: auto;
     width: 100%;
     object-fit:cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centre l'image elle-même */
 }

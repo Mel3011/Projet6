@@ -8,14 +8,16 @@ const Header = () => {
             <div className="logo">
             <img src={logo} alt="Logo de mon application" />
             </div>
-            <nav>
-                <ul>
-                    <li>
-                        <Link to="/">Accueil</Link>
-                        <Link to="/a-propos">À Propos</Link>
-                    </li>
-                </ul>
-            </nav>
+            <div className='nav-bar'>
+                <nav>
+                    <ul>
+                        <li>
+                            <Link to="/">Accueil</Link>
+                            <Link to="/a-propos">À Propos</Link>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </header>
     );
 };
