@@ -1,10 +1,11 @@
 import React from 'react';
-import Error from '../Components/Error';
+import Error from '../Components/Error/Error';
+
 
 
 const Erreur = () => {
     return (
-        <Error/>
+        <Error />
     );
 };
 

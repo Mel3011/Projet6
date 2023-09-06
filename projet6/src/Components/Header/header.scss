@@ -4,7 +4,6 @@ header {
     flex-direction:row;
     align-items: center;
     justify-content: space-between;
-    color: #ff6464;
     padding: 30px 50px;
 }
 
@@ -22,9 +21,9 @@ li{
     list-style-type: none;
 }
 
-a{
+.nav-bar a {
     text-decoration: none;
-    color: #FF6060;
+    color: var(--data-color-secondary);
     padding: 15px;
     font-size: 24px;
     

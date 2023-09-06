@@ -1,0 +1,25 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--data-color-secondary);
+    gap: 30px;
+    min-height: 655px;
+}
+
+.errortype {
+    font-size: 200px;
+    font-weight: bold;
+}
+
+.message {
+    font-size: 36px;
+    text-align: center;
+}
+
+.content a {
+    padding: 20px;
+    text-decoration: underline;
+    color: var(--data-color-secondary);
+
+}
