@@ -1,9 +1,10 @@
 import React from 'react';
+import Collapse from '../Components/Collapse/Collapse';
 
-const Apropos = () => {
+function Apropos () {
     return (
         <div>
-            A propos
+            <Collapse buttonLabel="Section 1" content={<p>Contenu de la section 1.</p>}/>
         </div>
     );
 };
