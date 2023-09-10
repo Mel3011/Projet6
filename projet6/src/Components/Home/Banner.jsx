@@ -1,15 +1,24 @@
 import React from 'react';
-import banner from '../../Assets/Banner.jpg';
+import PropTypes from 'prop-types';
 
+function Banner(props) {
+    const { title, alt, link, imageUrl } = props;
 
-function Banner() {
-    const title = 'Chez vous, partout et ailleurs'
     return (
         <div className='home-banner'>
-            <img src={banner} alt='Bannière Kasa' className='home-image' />
+            <a href={link}>
+                <img src={imageUrl} alt={alt} className='home-image' />
+            </a>
             <h1 className='home-title'>{title}</h1>
         </div>
-    )
+    );
 }
 
-export default Banner
+Banner.propTypes = {
+    title: PropTypes.string.isRequired,
+    alt: PropTypes.string.isRequired,
+    link: PropTypes.string.isRequired,
+    imageUrl: PropTypes.string.isRequired, // Nouvelle prop pour l'URL de l'image
+};
+
+export default Banner;

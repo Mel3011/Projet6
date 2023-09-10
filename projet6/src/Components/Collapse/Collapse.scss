@@ -1,0 +1,23 @@
+.aboutpage {
+    padding: 30px 80px;
+}
+
+.collapse {
+    background-color: var(--data-color-secondary);
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+}
+
+.collapse button {
+    color: white;
+    text-decoration: none;
+    border: none;
+    background-color: var(--data-color-secondary);
+    font-size: 24px;
+}
+

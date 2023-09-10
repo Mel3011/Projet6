@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
 
-function Collapse ({ buttonLabel, content }) {
+function Collapse({ buttonLabel, content }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleCollapse = () => {
@@ -8,12 +10,13 @@ function Collapse ({ buttonLabel, content }) {
   };
 
   return (
-    <div>
+    <div className='collapse'>
+      {buttonLabel}
       <button onClick={toggleCollapse}>
-        {isOpen ? 'Cacher' : 'Afficher'} le contenu
+        <FontAwesomeIcon icon={isOpen ? faChevronUp: faChevronDown} />
       </button>
       {isOpen && (
-        <div>
+        <div className={`collapse-content ${isOpen ? 'open' : 'closed'}`}>
           {content}
         </div>
       )}
