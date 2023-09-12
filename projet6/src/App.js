@@ -4,6 +4,7 @@ import Erreur from "./Pages/Erreur";
 import Apropos from "./Pages/Apropos";
 import Header from "./Components/Header/Header";
 import Footer from "./Components/Footer/Footer";
+import Logement from "./Pages/Logement";
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
               <Route index element={<Home />} />
               <Route path="*" element={<Erreur /> } />
               <Route path="/a-propos" element={<Apropos/>}/>
-              {/* <Route path="/logement/:id" element={<Logement />} /> */}
+              <Route path="/logement/:id" element={<Logement />} />
             </Routes>
           <Footer />
     </BrowserRouter>

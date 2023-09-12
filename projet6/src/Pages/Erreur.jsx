@@ -5,7 +5,8 @@ import Error from '../Components/Error/Error';
 
 const Erreur = () => {
     return (
-        <Error />
+        <main><Error />
+        </main>
     );
 };
 

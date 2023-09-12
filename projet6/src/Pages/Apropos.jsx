@@ -5,7 +5,7 @@ import aboutbanner from '../Assets/aboutbanner.png';
 
 function Apropos () {
     return (
-        <><div className='banière'>
+        <main><div className='baniere'>
             <Banner 
                 alt="Bannière Kasa"
                 imageUrl={aboutbanner}
@@ -16,7 +16,7 @@ function Apropos () {
                 <Collapse buttonLabel="Respect" content={<p>Contenu de la section 2.</p>} />
                 <Collapse buttonLabel="Service" content={<p>Contenu de la section 3.</p>} />
                 <Collapse buttonLabel="Sécurité" content={<p>Contenu de la section 4.</p>} />
-        </div></>
+        </div></main>
     );
 };
 

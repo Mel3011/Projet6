@@ -7,7 +7,7 @@ import homebanner from '../Assets/homebanner.jpg'
 
 const Home = () => {
     return (
-        <><div className='banière'>
+        <main><div className='baniere'>
             <Banner
                 title="Chez vous, partout et ailleurs"
                 alt="Bannière Kasa"
@@ -16,7 +16,7 @@ const Home = () => {
             />
         </div><div className='Cards'>
                 <Card />
-            </div></>
+            </div></main>
     );
 };
 
