@@ -1,16 +1,17 @@
 .aboutpage {
-    padding: 50px 80px;
+    padding: 30px 100px;
 }
 
-.collapse {
+.collapse-open {
     background-color: var(--data-color-secondary);
     color: white;
-    padding: 15px;
+    padding: 20px;
     border-radius: 10px;
-    margin-bottom: 20px;
+    margin-top: 25px;
     display: flex;
     justify-content: space-between;
     font-size: 24px;
+    align-items: center;
 }
 
 .collapse button {
@@ -21,13 +22,25 @@
     font-size: 24px;
 }
 
-.collapse-open {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
 
 .collapse-content {
     background-color: #F6F6F6;
-    ;
+    color: var(--data-color-secondary);
+    border-radius: 0 0 10px 10px;
+    font-size: 20px;
+}
+
+.collapse-content p {
+    padding: 20px;
+}
+
+/*Responsive*/
+@media (max-width: 768px) {
+    .aboutpage {
+        padding: 10px 0;
+    }
+    .collapse-open {
+        font-size: 18px;
+        padding-bottom: 20px;
+    }
 }

@@ -36,3 +36,15 @@
     left: 50%;
     transform: translate(-50%, -50%); 
 }
+
+/*Responsive*/
+@media (max-width: 768px) {
+    .home-banner {
+        height: 120px;
+    }
+    .home-banner h1 {
+        font-size: 22px;
+        text-align: left ;
+        left: 40%;
+    }
+}

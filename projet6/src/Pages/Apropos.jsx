@@ -12,10 +12,10 @@ function Apropos () {
             />
         </div>
         <div className='aboutpage'>
-                <Collapse buttonLabel="Fiabilité" content={<p>Contenu de la section 1.</p>} />
-                <Collapse buttonLabel="Respect" content={<p>Contenu de la section 2.</p>} />
-                <Collapse buttonLabel="Service" content={<p>Contenu de la section 3.</p>} />
-                <Collapse buttonLabel="Sécurité" content={<p>Contenu de la section 4.</p>} />
+                <Collapse buttonLabel="Fiabilité" content={<p>Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes.</p>} />
+                <Collapse buttonLabel="Respect" content={<p>La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme.</p>} />
+                <Collapse buttonLabel="Service" content={<p>La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme.</p>} />
+                <Collapse buttonLabel="Sécurité" content={<p>La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers pour la sécurité domestique pour nos hôtes.</p>} />
         </div></main>
     );
 };

@@ -27,9 +27,26 @@ li{
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 30px;
-    font-size: 24px;
-    
+    font-size: 24px; 
 }
+
 .logo img {
     width: 80%;
+}
+
+/*Responsive*/
+@media (max-width: 768px) {
+    header {
+        padding: 15px;
+    }
+
+    .logo img {
+        width: 100%;
+    }
+
+    .nav-bar a {
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+
 }

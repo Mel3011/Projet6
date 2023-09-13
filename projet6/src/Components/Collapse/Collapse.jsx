@@ -11,16 +11,14 @@ function Collapse({ buttonLabel, content }) {
 
   return (
     <div className='collapse'>
-      {buttonLabel}
       <div className='collapse-open'>
+        {buttonLabel}
         <button onClick={toggleCollapse}>
           <FontAwesomeIcon icon={isOpen ? faChevronUp : faChevronDown} />
         </button>
-        {isOpen && (
-          <div className="collapse-content">
-            {content}
-          </div>
-        )}
+      </div>
+      <div className="collapse-content">
+        {isOpen && content}
       </div>
     </div>
   );
