@@ -1,22 +1,13 @@
-import * as React from 'react';
-import { Routes, Route, useParams } from 'react-router-dom';
+import React from 'react';
+import Slideshow from '../Components/Logement/Slideshow';
 
-
-function Logement () {
-  // Get the userId param from the URL.
-  let { id } = useParams();
-  // ...
-}
-
-function App() {
+const Logement = ({ match }) => {
+  const logementId = match.params.logementId;
   return (
-    <Routes>
-      <Route path="users">
-        <Route path=":id" element={<ProfilePage />} />
-        
-      </Route>
-    </Routes>
+    <div>
+       <Slideshow logementId={logementId} />
+    </div>
   );
-}
+};
 
 export default Logement;
