@@ -1,24 +1,25 @@
-import React from 'react';
-import { Slide } from 'react-slideshow-image';
-import 'react-slideshow-image/dist/styles.css';
-import annonces from '../../annonces.json';
+import React, { useState } from 'react';
 
-const Slideshow = ({ logementId }) => {
-  // Filtrer les annonces pour obtenir celles associées à l'ID du logement
-  const logementAnnonces = annonces.filter(annonces => annonces.id === logementId);
+const Slideshow = ({ images }) => {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  // Extraire les URL des images pour le logement spécifique
-  const imageUrls = logementAnnonces.map(annonces => annonces.pictures);
+  const nextSlide = () => {
+    setCurrentImageIndex((prevIndex) =>
+      prevIndex === images.length - 1 ? 0 : prevIndex + 1
+    );
+  };
+
+  const previousSlide = () => {
+    setCurrentImageIndex((prevIndex) =>
+      prevIndex === 0 ? images.length - 1 : prevIndex - 1
+    );
+  };
 
   return (
-    <div className="slide-container">
-      <Slide images={imageUrls}>
-        {imageUrls.map((imageUrl, index) => (
-          <div key={index}>
-            <img src={imageUrl} alt={`Image ${index}`} />
-          </div>
-        ))}
-      </Slide>
+    <div className="slideshow">
+      <button onClick={previousSlide}>Previous</button>
+      <img src={images[currentImageIndex]} alt={`Image ${currentImageIndex}`} />
+      <button onClick={nextSlide}>Next</button>
     </div>
   );
 };
