@@ -9,14 +9,14 @@ import Logement from "./Pages/Logement";
 function App() {
   return (
     <BrowserRouter>
-          <Header />
-            <Routes>
-              <Route index element={<Home />} />
-              <Route path="*" element={<Erreur /> } />
-              <Route path="/a-propos" element={<Apropos/>}/>
-              <Route path="/logement/:id" element={<Logement />} />
-            </Routes>
-          <Footer />
+      <Header />
+      <Routes>
+        <Route index element={<Home />} />
+        <Route path="*" element={<Erreur />} />
+        <Route path="/a-propos" element={<Apropos />} />
+        <Route path="/logement/:id" element={<Logement />} />
+      </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }

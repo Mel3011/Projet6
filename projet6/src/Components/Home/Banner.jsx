@@ -15,9 +15,9 @@ function Banner(props) {
 }
 
 Banner.propTypes = {
-    title: PropTypes.string.isRequired,
+    title: PropTypes.string,
     alt: PropTypes.string.isRequired,
-    link: PropTypes.string.isRequired,
+    link: PropTypes.string,
     imageUrl: PropTypes.string.isRequired, // Nouvelle prop pour l'URL de l'image
 };
 

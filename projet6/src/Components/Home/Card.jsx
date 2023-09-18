@@ -6,11 +6,13 @@ function Card() {
   return (
     <div className='block-card'>
       {annonces.map((logement, index) => (
-        <Link to={"/logement/" + logement.id}>
-        <div key={index} className="location-card">
+        
+          <Link to={"/logement/" + logement.id} key={index}>
+        <div  className="location-card">
           <img src={logement.cover} alt={logement.title} />
           <h2 className='location-title'>{logement.title}</h2>
-        </div></Link>
+        </div>
+          </Link>
       ))}
     </div>
   );

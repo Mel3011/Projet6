@@ -1,7 +1,57 @@
-.slide-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-size: cover;
-    height: 400px;
+.slideshow {
+  display: flex;
+  flex-direction: column;
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+
+  .counter {
+    color: white;
+  }
+}
+
+.carousel img {
+  width: 100%;
+  height: 500px;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 30px;
+  object-fit: cover;
+  position: relative;
+}
+
+.carousel button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.carousel p {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.arrow-left {
+  position: absolute;
+  top: 50%;
+  color: white;
+  font-size: 3em;
+  z-index: 1;
+  left: 0;
+}
+.arrow-right {
+  position: absolute;
+  top: 50%;
+  color: white;
+  font-size: 3em;
+  z-index: 1;
+  right: 0;
 }
