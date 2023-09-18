@@ -1,7 +1,3 @@
-.logement {
-  padding: 0 50px;
-}
-
 .informations {
   display: flex;
   margin-top: 20px;
@@ -12,7 +8,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 1rem;
+  gap: 20px;
   color: var(--data-color-secondary);
 }
 
@@ -21,6 +17,7 @@
   flex-direction: column;
   align-items: flex-end;
   width: 20%;
+  gap: 20px;
 
   .profil {
     text-align: right;
@@ -46,6 +43,7 @@
     .star {
       color: grey;
       padding: 4px;
+      font-size: 20px;
     }
     .active {
       color: var(--data-color-secondary) !important;
@@ -83,9 +81,45 @@
     display: flex;
     background-color: var(--data-color-secondary);
     color: white;
-    border-radius: 15px;
-    padding: 5px 30px;
+    border-radius: 10px;
+    padding: 5px 20px;
     width: auto;
     justify-content: center;
+    font-size: 14px;
+  }
+}
+
+/*Responsive*/
+@media (max-width: 768px) {
+  .informations {
+    flex-direction: column;
+  }
+
+  .right-side {
+    display: flex;
+    width: 100%;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    .rating {
+      flex-wrap: wrap;
+      .star {
+        padding: 2px;
+      }
+    }
+  }
+
+  .left-side {
+    width: 100%;
+    .tags {
+      width: 100%;
+      flex-wrap: wrap;
+    }
+  }
+
+  .logement-collapse {
+    flex-direction: column;
+    gap: 0;
   }
 }

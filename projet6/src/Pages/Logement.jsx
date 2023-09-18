@@ -38,48 +38,50 @@ const Logement = () => {
   }
 
   return (
-    <div className="logement">
-      <Slideshow images={annonce.pictures} />
-      <div className="informations">
-        <div className="left-side">
-          <h1>{annonce.title}</h1>
-          <p>{annonce.location}</p>
-          <div className="tags">
-            {annonce.tags.map((tag) => (
-              <p key={tag}>{`${tag}`}</p>
-            ))}
-          </div>
-        </div>
-        <div className="right-side">
-          <div className="profil">
-            <div className="name">
-              <p>{annonce.host.name}</p>
-            </div>
-            <div className="photo">
-              <img src={annonce.host.picture} alt="profilephoto" />
-            </div>
-          </div>
-          <div className="rating">{stars}</div>
-        </div>
-      </div>
-      <div className="logement-collapse">
-        <Collapse
-          buttonLabel="Description"
-          content={<p>{annonce.description}</p>}
-        />
-        <Collapse
-          buttonLabel="Equipements"
-          content={
-            <p>
-              {" "}
-              {annonce.equipments.map((equipment) => (
-                <li key={equipment}>{equipment}</li>
+    <main>
+      <div className="logement">
+        <Slideshow images={annonce.pictures} />
+        <div className="informations">
+          <div className="left-side">
+            <h1>{annonce.title}</h1>
+            <p>{annonce.location}</p>
+            <div className="tags">
+              {annonce.tags.map((tag) => (
+                <p key={tag}>{`${tag}`}</p>
               ))}
-            </p>
-          }
-        />
+            </div>
+          </div>
+          <div className="right-side">
+            <div className="profil">
+              <div className="name">
+                <p>{annonce.host.name}</p>
+              </div>
+              <div className="photo">
+                <img src={annonce.host.picture} alt="profilephoto" />
+              </div>
+            </div>
+            <div className="rating">{stars}</div>
+          </div>
+        </div>
+        <div className="logement-collapse">
+          <Collapse
+            buttonLabel="Description"
+            content={<p>{annonce.description}</p>}
+          />
+          <Collapse
+            buttonLabel="Equipements"
+            content={
+              <p>
+                {" "}
+                {annonce.equipments.map((equipment) => (
+                  <li key={equipment}>{equipment}</li>
+                ))}
+              </p>
+            }
+          />
+        </div>
       </div>
-    </div>
+    </main>
   );
 };
 

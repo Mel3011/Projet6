@@ -41,17 +41,34 @@
 }
 .arrow-left {
   position: absolute;
-  top: 50%;
+  top: 40%;
   color: white;
-  font-size: 3em;
+  font-size: 4em;
   z-index: 1;
   left: 0;
+  padding: 20px;
 }
 .arrow-right {
   position: absolute;
-  top: 50%;
+  top: 40%;
   color: white;
-  font-size: 3em;
+  font-size: 4em;
   z-index: 1;
   right: 0;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .carousel {
+    img {
+      height: 250px;
+    }
+  }
+  .arrow-left {
+    font-size: 2rem;
+  }
+
+  .arrow-right {
+    font-size: 2rem;
+  }
 }

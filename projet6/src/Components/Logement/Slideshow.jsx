@@ -1,4 +1,9 @@
 import React, { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faChevronRight,
+  faChevronLeft,
+} from "@fortawesome/free-solid-svg-icons";
 
 const Slideshow = ({ images }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -28,7 +33,7 @@ const Slideshow = ({ images }) => {
             onClick={previousSlide} // Clic sur la flèche de gauche pour passer à l'image précédente
             style={{ cursor: "pointer" }}
           >
-            {"<"}
+            <FontAwesomeIcon icon={faChevronLeft} />
           </div>
         )}
 
@@ -38,7 +43,7 @@ const Slideshow = ({ images }) => {
             onClick={nextSlide} // Clic sur la flèche de droite pour passer à l'image suivante
             style={{ cursor: "pointer" }}
           >
-            {">"}
+            <FontAwesomeIcon icon={faChevronRight} />
           </div>
         )}
       </div>
