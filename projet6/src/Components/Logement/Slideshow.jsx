@@ -47,9 +47,12 @@ const Slideshow = ({ images }) => {
           </div>
         )}
       </div>
-      <p className="counter">
+      {images.length > 1 && (
+        <p className="counter">
         {currentImageIndex + 1} / {images.length}
       </p>
+      )}
+      
     </div>
   );
 };
