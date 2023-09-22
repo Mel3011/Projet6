@@ -9,6 +9,14 @@ header {
 
 .nav-bar {
     width: 500px;
+    a {
+        text-decoration: none;
+        color: var(--data-color-secondary);
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 30px;
+        font-size: 24px; 
+    }
 }
 
 ul{
@@ -21,20 +29,11 @@ li{
     list-style-type: none;
 }
 
-.nav-bar a {
-    text-decoration: none;
-    color: var(--data-color-secondary);
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 30px;
-    font-size: 24px; 
-}
-
 .logo img {
     width: 80%;
 }
 
-/*Responsive*/
+/*Mobile*/
 @media (max-width: 768px) {
     header {
         padding: 15px;

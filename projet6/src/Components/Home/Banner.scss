@@ -1,19 +1,29 @@
-.home-banner h1 {
-    color: white;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 40px;
-    z-index: 2;
 
-}
 .home-banner {
     position: relative;
     text-align: center;
     border-radius: 30px;
     overflow: hidden;
     height: 230px;
+    h1 {
+        color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 40px;
+        z-index: 2;
+    
+    }
+    img {
+        height: auto;
+        width: 100%;
+        object-fit:cover;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); 
+    }
 }
 
 .home-banner::before {
@@ -27,17 +37,7 @@
     z-index: 1; 
 }
 
-.home-banner img {
-    height: auto;
-    width: 100%;
-    object-fit:cover;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); 
-}
-
-/*Responsive*/
+/*Mobile*/
 @media (max-width: 768px) {
     .home-banner {
         height: 120px;

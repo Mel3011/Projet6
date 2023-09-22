@@ -20,6 +20,7 @@
     border: none;
     background-color: var(--data-color-secondary);
     font-size: 24px;
+    cursor: pointer;
 }
 
 
@@ -28,13 +29,14 @@
     color: var(--data-color-secondary);
     border-radius: 0 0 10px 10px;
     font-size: 20px;
+    p {
+        padding: 20px;
+    }
 }
 
-.collapse-content p {
-    padding: 20px;
-}
 
-/*Responsive*/
+
+/*Mobile*/
 @media (max-width: 768px) {
     .aboutpage {
         padding: 10px 0;

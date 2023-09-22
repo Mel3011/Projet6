@@ -8,17 +8,16 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 
 const Logement = () => {
-  const { id } = useParams(); // Récupérez l'ID de l'annonce à partir de l'URL
-  console.log("ID extrait des paramètres d'URL :", id);
+  const { id } = useParams(); // Récupérer l'ID de l'annonce à partir de l'URL
 
-  // Recherchez l'annonce correspondant à l'ID dans les données JSON
+
+  // Recherche de l'annonce correspondant à l'ID dans les données JSON
   const annonce = data.find((item) => {
-    console.log("ID de l'élément en cours de vérification :", item.id);
+
     return item.id === id;
   });
 
-  console.log("note :", annonce.rating);
-
+  
   if (!annonce) {
     return <Navigate to="/Erreur" />;
   }

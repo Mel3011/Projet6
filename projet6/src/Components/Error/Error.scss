@@ -5,6 +5,12 @@
     color: var(--data-color-secondary);
     gap: 30px;
     min-height: 655px;
+
+    a {
+        padding: 20px;
+        text-decoration: underline;
+        color: var(--data-color-secondary);
+    }
 }
 
 .errortype {
@@ -16,11 +22,4 @@
 .message {
     font-size: 36px;
     text-align: center;
-}
-
-.content a {
-    padding: 20px;
-    text-decoration: underline;
-    color: var(--data-color-secondary);
-
 }
